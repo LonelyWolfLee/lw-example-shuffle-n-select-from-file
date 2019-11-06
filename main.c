@@ -43,13 +43,6 @@ int main(int argc, char* argv[]) {
     return status;
 }
 
-void pt(long positions[], int line_count) {
-    for (int i = 0; i < line_count; i++) {
-        printf("%ld ", positions[i]);
-    }
-    printf("\n");
-}
-
 int get_start_positions(FILE* stream, long positions[]) {
     printf("Finding start positions ...\n");
     char sentence[MAX_LINE_SIZE+1];
